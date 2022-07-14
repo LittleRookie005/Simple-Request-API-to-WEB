@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def transaksi():
-    url = 'http://127.0.0.1:5000/api/mastertransaksi'
+    url = 'YOUR-API'
     response_info = requests.get(url)
     response = response_info.json()
 
